@@ -6,7 +6,7 @@ inputs:
  who-go-greet: #id of input
   description: 'Who to greet'
   required: true
-	default: 'hhh'
+  default: 'hhh'
 
 outputs:
  time: #id of output
