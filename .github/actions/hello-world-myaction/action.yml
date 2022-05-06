@@ -1,18 +1,16 @@
 #action.yml
-name: Hello World
+name: 'Hello World'
 description: "Greet someone and record the time"
-
 inputs:
  who-go-greet: #id of input
  required: true
  default: 'Isma'
-
 outputs:
  time: #id of output
  description: 'The time we greeted you'
- 
 runs:
  using: 'docker'
- image: ./Dockerfile
+ image: 'Dockerfile'
  args:
   -${{ inputs.who-to-greet }}
+
