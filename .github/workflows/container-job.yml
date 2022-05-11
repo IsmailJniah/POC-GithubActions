@@ -7,9 +7,8 @@ name: container
 
 jobs:
   node-docker:
-    runs-on: ubuntu-latest
     container:
-      image: node:latest
+      image: ubuntu:latest
     steps:
          - name: Log the node version
            run: |
