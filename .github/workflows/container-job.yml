@@ -7,11 +7,11 @@ name: container
 
 jobs:
   node-docker:
-    runs-on: ubuntu:latest
+    runs-on: ubuntu-latest
     container:
-      image: ubuntu:latest
+      image: node:latest
     steps:
          - name: Log the node version
            run: |
-             ls
-          
+             node -v
+             cat /etc/os-release  
