@@ -9,8 +9,12 @@ jobs:
   node-docker:
     container:
       image: ubuntu:latest
+      env:
+        NODE_ENV: development
+      ports:
+        - 80
     steps:
          - name: Log the node version
            run: |
-             node -v
-             cat /etc/os-release  
+             ls
+          
