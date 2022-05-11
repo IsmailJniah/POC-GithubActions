@@ -9,7 +9,7 @@ jobs:
   node-docker:
     runs-on: ubuntu-latest
     container: 
-      image: openvidu/openvidu-test-e2e
+      image: openvidu/openvidu-test-e2e:focal
       options: '--privileged -p 4200:4200 -p 4443:4443 -p 4114:4114 -u root -e MY_UID=0 ' 
     steps:
          - name:  Build 1
