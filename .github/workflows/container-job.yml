@@ -10,10 +10,6 @@ jobs:
     runs-on: ubuntu:latest
     container:
       image: ubuntu:latest
-      env:
-        NODE_ENV: development
-      ports:
-        - 80
     steps:
          - name: Log the node version
            run: |
